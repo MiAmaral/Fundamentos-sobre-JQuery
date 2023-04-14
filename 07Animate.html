@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Animate- JQuery</title>
+        <!-- CSS -->
+        <style>
+            div{
+                width:500px;
+                height: 600px;
+                background-color: blueviolet;
+                border: groove 10px #229b07;
+                border-radius: 50px;
+            }
+        </style>
+        <!-- JQuery -->
+        <script src="jquery-3.6.4.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            // Ao carregar o documento
+            $(document).ready(function(){
+
+                //Efeito
+                $("button").click(function(){
+
+                    $("div").animate({ //Com o .animate é possível trabalhar com diversas características
+                        width:"900px",
+                        height:"300px",
+                        opacity: "0.50"
+                        // O método animate() permite somente a alteração de valores numéricos no CSS, ou seja, não permite alterar a cor de background
+                    });
+                });
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <button> Clique aqui </button>
+        <hr>
+        <div></div>
+    
+    </body>
+</html>

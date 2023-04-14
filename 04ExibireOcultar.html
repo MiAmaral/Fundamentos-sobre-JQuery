@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exibir e Ocultar - JQuery</title>
+        
+        <!-- JQuery -->
+        <script src="jquery-3.6.4.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            // Ao carregar o documento
+            $(document).ready(function(){
+
+                //Exibir
+                $("#exibir").click(function(){
+                    $("img").show();
+                });
+
+                //Ocultar
+                $("#ocultar").click(function(){
+                    $("img").hide();
+                });
+
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <button id="exibir">Exibir</button>
+        <button id="ocultar">Ocultar</button>
+
+        <br>
+
+        <img width="700px" height="900px" src="images/img_Alex.jpg">
+    
+    </body>
+</html>

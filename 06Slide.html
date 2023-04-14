@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Slide - JQuery</title>
+        
+        <!-- JQuery -->
+        <script src="jquery-3.6.4.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            // Ao carregar o documento
+            $(document).ready(function(){
+
+                //Ocultar
+                $(".ocultar").click(function(){
+
+                    $(".imagem").slideUp(5000);
+                });
+
+                //Exibir
+                $(".exibir").click(function(){
+
+                    $(".imagem").slideDown(5000);
+                });
+
+            });
+
+            /* 
+                Tempo de slide:
+                1 - Default 0,4s
+                2 - Slow 0,6s
+                3 - Valor em milisegundos (3s = 3000)
+            */
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1 class="exibir">Exibir</h1>
+        <h1 class="ocultar">Ocultar</h1>
+
+        <hr>
+
+        <img class="imagem" width="600px" height="800px"  src="images/img_Chaplin.jpg">
+    
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Estrutura Base - JQuery</title>
+        
+        <!-- JQuery -->
+        <script src="jquery-3.6.4.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            // Ao carregar o documento
+            $(document).ready(function(){
+
+                //Selecionar e alterar o elemento img
+                //.attr() é o método para alterar os atributos dentro das tags, podendo ser de imagens, links, textos, formulários, etc.
+                //O :eq() serve para selecionar o índice da tag escolhida
+                $("img:eq(1)").attr("width","200");
+                $("img:eq(1)").attr("title","Alterando title e o width via Jquery");
+
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <img src="images/img_Polar.jpg" width="500px" title="Polar">
+        <img src="images/img_Polar.jpg" width="500px" title="Polar2">
+
+    
+    </body>
+</html>

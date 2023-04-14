@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS - JQuery</title>
+        
+        <!-- JQuery -->
+        <script src="jquery-3.6.4.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            // Ao carregar o documento
+            $(document).ready(function(){
+
+                $("h1").css({
+                //Quando se trabalha com multiplas propriedades Css, utiliza-se as {} (chaves).
+                //A última linha de atributo não utiliza vírgula
+                    "color":"pink",
+                    "borderStyle":"solid",
+                    "borderColor":"green",
+                    "backgroundColor":"blue"
+                });
+
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1>Utilizando CSS com jQuery</h1>
+    
+    </body>
+</html>
